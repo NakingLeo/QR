@@ -1,0 +1,210 @@
+
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>登陆测试</title>
+<style type="text/css">a {text-decoration: none}</style>
+      <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+   .F1{
+    background:#3e77c8;
+    color:#ffffff;
+    text-align: center;
+    font-size: 23px;
+    font-weight:400;
+    height: 80px;
+    line-height: 90px;
+    position:relative;
+  }
+  .Fp{
+
+    background:#f3f2f5;
+
+    color:#696969;
+
+    line-height: 40px;
+
+    height: 10px;
+
+  }
+  .F2{
+
+    background:#fffeff;
+
+    color:#696969;
+
+    font-weight: 1000;
+
+    line-height: 40px;
+
+    height: 40px;
+
+  }
+
+  .F3{
+
+    background:#f3f2f5;
+
+    color:#696969;
+
+    line-height: 40px;
+
+    height: 10px;
+
+  }
+
+  .F4{
+
+    background:#fffeff;
+
+    color:#696969;
+
+    font-weight: 1000;
+
+    line-height: 43px;
+
+    height: 40px;
+
+  }
+  .F5{
+
+    background:#f3f2f5;
+
+    color:#696969;
+
+    line-height: 40px;
+
+    height: 10px;
+
+  }
+
+
+
+  .F6{
+    background:#f5f6f8;
+    color:#96979c;
+
+    font-weight: 900;
+    line-height: 40px;
+    height: 40px;
+  }  
+  .F7{
+    background:#ffffff;
+
+    color:#535456;
+
+    font-weight: 400;
+
+    height: 120px;
+
+  }  
+
+  .F8{
+
+    background:#f5f6f8;
+
+    color:#96979c;
+
+    font-weight: 900;
+    line-height: 40px;
+
+    height: 40px;
+
+  }  
+
+  .F9{
+
+    background:#ffffff;
+
+    color:#696969;
+
+    line-height: 112px;
+
+    height: 315px;
+
+  }
+</style>
+
+</head>
+<body link="fff">
+
+  <div class=F1>
+
+      <img align="left" src="./img/X.jpg" width="70" >
+
+ 学生返校后日常通行码
+
+      <img align="right" src="./img/dot.jpg" width="35">
+
+  </div>
+
+  <div class=Fp>&nbsp;&nbsp;&nbsp;</div>
+  <div class=F2>
+
+      当前部门：信息科学与工程学部
+      <img align="left" src="./img/1.jpg" width="35" >
+
+  </div>
+
+  <div class=F3>&nbsp;&nbsp;&nbsp;</div>
+  <div class=F4>
+      学生返校后通行码
+      <img align="left" src="./img/2.jpg" width="35" >
+    </div>
+  <div class=F5>&nbsp;&nbsp;&nbsp;</div>
+
+  <div class=F6>&nbsp;&nbsp;&nbsp;请登陆系统</div>
+
+
+
+  <div class=F7>
+
+        <!--设置两个输入框-->
+        <!--p是段落，id代表这个段落的标识，后面可以通过getElementById来获取这个段落-->
+        <p align="center"><label class="label_input">用户名&nbsp;</label><input type="text" id="username" class="text_field"/></p>
+        <p align="center"><label class="label_input">&nbsp;&nbsp;&nbsp;密码&nbsp;</label><input type="text" id="password" class="text_field"/></p>
+        
+        <!--button 按钮,type 设置类型  onclick调用脚本-->
+        <p align="center"><button type="button" onclick="myFunction()">登陆</button></p>
+        
+        <!--脚本-->
+        <script>
+            function myFunction()
+            {
+                <!--根据段落的ID，获取段落里面的输入数据，主要是getElementById-->
+                 var user = document.getElementById("username").value;
+                 var pwd = document.getElementById("password").value;
+                 
+                 <!--判断用户名和密码对不对-->
+                 if(user=="sifer"&&pwd=="我爱大鸡鸡")
+                 {
+                    window.open("./QRcode/lv.html"); 
+                 }else if(user=="huwenshayu"&&pwd=="123456"){
+                    window.open("./QRcode/in.html"); 
+                 }
+                 else
+                 {
+                    window.alert("failed");
+                 }
+                 
+            }
+            
+        </script>
+  </div>
+
+
+
+  <div class=F8>&nbsp;&nbsp;&nbsp;通行码</div>
+
+  <div class=F9 align="center"><img style="position:relative;top: 8px;" src="./img/code.gif" width="300"></div>
+
+</body>
+
+</html>
+
